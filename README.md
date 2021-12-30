@@ -23,3 +23,15 @@ echo $fruits[1];
 
 $home = ['addres' => '沖縄県', 'addres2' => '大阪' ];
 echo $home['addres'];
+
+      if ($_POST['category'] == '1') echo '和食';
+      if ($_POST['category'] == '2') echo '洋食';
+      if ($_POST['category'] == '3') echo '中華';
+      echo '<br>';
+      if ($_POST['difficulty'] == '1') {
+        echo '簡単';
+      } elseif ($_POST['difficulty'] == '2') {
+        echo '普通';
+      } else {
+        echo '難しい';
+      }
