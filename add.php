@@ -28,7 +28,8 @@
     //データベースとの接続を終了
     $dbh = null;
     //ブラウザに登録完了の表示をする
-    echo 'レシピの登録が完了しました。';
+    echo 'レシピの登録が完了しました。<br>';
+    echo '<a href="index.php">トップページへ戻る</a>';
   } catch(PDOException $e) {
     echo 'エラー発生: ' . htmlspecialchars($e->getMessage(), ENT_QUOTES) . '<br>';
     exit;

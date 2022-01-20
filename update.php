@@ -38,8 +38,8 @@
     $dbh = null;
 
     //更新されたことが分かるように画面上にメッセージを表示
-    echo 'ID: ' . htmlspecialchars($id, ENT_QUOTES) . 'レシピの更新が完了しました。';
-
+    echo 'ID: ' . htmlspecialchars($id, ENT_QUOTES) . 'レシピの更新が完了しました。<br>';
+    echo '<a href="index.php">トップページへ戻る</a>';
   } catch(PDOException $e) {
     //Exception：例外
     echo 'エラー発生: ' . htmlspecialchars($e->getMessage(), ENT_QUOTES) . '<br>';

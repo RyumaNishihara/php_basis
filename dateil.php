@@ -41,6 +41,7 @@
     // ・PHP_EOLは、改行コード。 ・nl2brは、テキスト内の改行を表現してくれる。
     // データベースとの切断
     $dbh = null;
+    echo '<a href="index.php">トップページへ戻る</a>';
   } catch(PDOException $e) {
     echo 'エラー発生: ' . htmlspecialchars($e->getMessage(), ENT_QUOTES) . '<br>';
     // $e にエラー発生時の情報が格納される。

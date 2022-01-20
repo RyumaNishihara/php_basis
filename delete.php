@@ -30,8 +30,8 @@
     $dbh = null;
 
     //画面に削除完了のメッセージを表示する
-    echo 'ID: ' . htmlspecialchars($id, ENT_QUOTES) . 'の削除が完了しました。';
-
+    echo 'ID: ' . htmlspecialchars($id, ENT_QUOTES) . 'の削除が完了しました。<br>';
+    echo '<a href="index.php">トップページへ戻る</a>';
   } catch(PDOException $e) {
     //エラー時の表示を入力する
     echo 'エラー発生: ' . htmlspecialchars($e->getMessage(), ENT_QUOTES) . '<br>';

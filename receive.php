@@ -28,6 +28,7 @@
       //改行を実現する
       echo nl2br(htmlspecialchars($_POST['howto'], ENT_QUOTES));
       echo '<br>';
+      echo '<a href="index.php">トップページへ戻る</a>';
     ?>
   </body>
 </html>
